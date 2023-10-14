@@ -1,22 +1,27 @@
-# Projeto AACD
+# Interface com um Dispositivo Embarcado
 
-## Objetivo
+## Objetivos
 
-O objetivo desta aula é apresentar aos estudantes a plataforma Arduino + Tapete Tátil que será utilizada para prototipação da solução e suas respectivas interfaces de comunicação. 
+O objetivo desta aula é apresentar aos estudantes a plataforma Arduino + Tapete Sensorial que serão utilizados para prototipação da solução AACD.
 
-Espera-se que ao término da instrução o estudante possa conhecer ou relembrar a plataforma Arduino, as maneiras de programá-lo e as formas de interfacear ela com outros sistemas. 
+Espera-se que ao término da instrução o estudante possa conhecer ou relembrar a plataforma Arduino, as maneiras de programá-lo e as formas de interfaceá-la com outros sistemas.
 
 Para esta familiarização, será utilizado a interface de programação Arduino e os pacotes disponíveis para seu controle na linguagem Arduino. 
 
-Neste encontro serão abordados: Apresentação do Arduino e suas aplicações; Arquitetura de sistemas utilizando Arduínos; Características do Arduíno; Interface de programação aberta do Arduíno.
+Neste encontro serão abordados: 
+
+- Apresentação do Arduino e suas aplicações;
+- Arquitetura de sistemas utilizando Arduínos;
+- Características do Arduíno;
+- Interface de programação aberta do Arduíno.
 
 ## Assuntos relacionados
 
-- Atuadores
-- Energia em sistemas embarcados
-- Microcontroladores
-- Programação de microcontroladores
-- Simulação de sistemas embarcados
+- Atuadores;
+- Energia em sistemas embarcados;
+- Microcontroladores;
+- Programação de microcontroladores;
+- Simulação de sistemas embarcados.
 
 
 ## O que é o Arduino?
@@ -76,7 +81,7 @@ A gameficação contará com a entrada de dados provenientes do [Greg Maker](htt
 
 **O responsável pela detecção dos toques manuais é o Arduino Uno R3**.
 
-Exemplo: a figura abaixo apresenta alimentos semicondutores e objetos condutores (marmita de alumínio) conectados ao Greg Maker, que ao serem tocados, moverá o mouse na tela do computador, ou pressionará a barra de espaço ou o ENTER ou as setas. Vai depender de quais fios foram conectados em cada objeto.
+Exemplo: a figura abaixo apresenta alimentos e objetos condutores e semicondutores conectados ao Greg Maker, que ao serem tocados manualmente por uma pessoa com deficiência motora ou cerebral, moverá o mouse na tela do computador, ou pressionará a barra de espaço ou o ENTER ou alguma opção de setas. Vai depender de quais fios foram conectados em cada objeto.
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/gregMaker.png">
