@@ -146,6 +146,16 @@ Sobre a alimentação, o Arduino possui as seguintes limitações:
 </picture>
 
 
+E a árvore de energização da placa segue o seguinte padrão:
+
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoAlimentacao2.png">
+   <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoAlimentacao2.png)">
+</picture>
+
+
+
 ### Curiosidade
 
 Se você perder o adaptador do seu mouse ou teclado USB sem fio, não vai adiatar simplesmente comprar outro adaptador, pois existe um pareamento a ser feito entre receptor e o mouse.
