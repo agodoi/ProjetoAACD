@@ -27,7 +27,7 @@ Ela foi criada para tornar a eletrônica mais acessível aos estudantes, permiti
 
 A plataforma Arduino consiste em vários elementos:
 
-1. **Hardware**: O núcleo do hardware é a placa Arduino, que é equipada com um microcontrolador (geralmente da família AVR da Atmel/Microchip) e vários pinos de entrada/saída digitais e analógicos. Além da placa principal, existem diversas variações e modelos de placas Arduino (como mostra a figura a seguir) adequados para diferentes tipos de projetos. Elas podem ser alimentadas via USB, bateria ou fonte externa.
+1. **Hardware**: O núcleo do hardware é a placa Arduino, que é equipada com um microcontrolador (geralmente da família AVR da Atmel/Microchip) e vários pinos de entrada/saída digitais e analógicos. Além da placa principal, existem diversas variações e modelos de placas Arduino (como mostra a figura a seguir) adequados para diferentes tipos de projetos. Elas podem ser alimentadas via USB, bateria ou fonte externa. O que diferencia uma placa da outra é o seu tamanho físico (alguns projetos precisam ser miniaturizados), a quantidade de memória RAM e ROM, número de portais GPIO (General Purpose Input Output), tensão de trabalho e protocolos de comunicação.
 
 2. **Software**: A plataforma Arduino utiliza uma IDE (Integrated Development Environment) que fornece um ambiente de programação amigável. O software permite escrever, compilar e fazer o upload de código para a placa Arduino. O código é escrito em uma linguagem baseada em C/C++, simplificada para facilitar o aprendizado e o desenvolvimento.
 
@@ -41,3 +41,22 @@ A plataforma Arduino consiste em vários elementos:
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/familiaArduino.jpg">
    <img alt="Família Arduino" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/familiaArduino.jpg)">
 </picture>
+
+### Curiosidade
+
+O ESP32 é um microcontrolador que pode ser programado usando a mesma plataforma Arduino IDE. O ESP32 é de baixo custo e de alto desempenho, amplamente utilizado em projetos de IoT e em aplicações de comunicação sem fio, como WiFi e Bluetooth. Qual as relações entre ESP32 e a família Arduino?
+
+1. **Suporte Arduino**: A comunidade Arduino desenvolveu uma plataforma para o ESP32, que permite programar o ESP32 utilizando a IDE Arduino, da mesma maneira que se programa um Arduino tradicional. Isso facilita a programação e o desenvolvimento de projetos, especialmente para aqueles que já estão familiarizados com o ambiente Arduino.
+
+2. **Bibliotecas Arduino**: O ESP32 é compatível com muitas das bibliotecas Arduino existentes. Isso significa que você pode usar bibliotecas Arduino padrão para sensores, atuadores e outros componentes em projetos baseados em ESP32.
+
+3. **Ecosistema Arduino**: Como o ESP32 é compatível com o ambiente Arduino, ele se beneficia do vasto ecosistema Arduino, que inclui uma grande quantidade de exemplos de código, tutoriais, comunidade ativa e recursos de aprendizado.
+
+4. **Placas ESP32 compatíveis com Arduino**: Há várias placas de desenvolvimento ESP32 que foram projetadas para serem compatíveis com o formato e os pinos das placas Arduino. Isso permite que os usuários utilizem shields Arduino com suas placas ESP32.
+
+5. **Programação em C/C++**: Embora o ambiente Arduino simplifique a programação do ESP32, você ainda está programando em linguagem C/C++. Isso significa que é possível acessar diretamente o hardware do ESP32 e desenvolver código de baixo nível quando necessário. Outro ponto importante é que o ESP32 possui maior memória interna que o Arduino Uno R3, e por isso, o ESP32 pode ser convertido para microPython, que é uma variação do Python adaptada ao microcontrolador.
+
+
+### O modelo que vamos adotar nesse projeto é o Arduino Uno
+
+
