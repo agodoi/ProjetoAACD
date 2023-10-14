@@ -168,9 +168,34 @@ O pinout (significado de cada pino) é demonstrado na imagem a seguir:
 
 ### Arquitetura Harvard
 
-falta fazer, adicionar figura
+Nesse projeto, é importante entender a diferença as possíveis arquiteturas dos microcontroladores.
 
-https://www.elprocus.com/arduino-basics-and-design/
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://www.elprocus.com/arduino-basics-and-design/">
+   <img alt="Tipos de Arquitetura" src="[YOUR-DEFAULT-IMAGE](https://www.elprocus.com/arduino-basics-and-design/)">
+</picture>
+
+A arquitetura von Neumann e a arquitetura Harvard são dois paradigmas de design de computadores que diferem na maneira como tratam o armazenamento e a execução de instruções e dados. Essas arquiteturas têm implicações na operação e no desempenho dos sistemas, e podem ser contextualizadas na arquitetura do Arduino da seguinte maneira:
+
+Arquitetura Von Neumann:
+
+1. **Armazenamento de Instruções e Dados:** Na arquitetura von Neumann, tanto as instruções quanto os dados são armazenados na mesma memória, a RAM. Isso significa que o programa e os dados compartilham a mesma memória física.
+
+2. **Barramento Único:** A arquitetura von Neumann usa um único barramento para transferir tanto instruções quanto dados entre a memória e a unidade de processamento (CPU). Isso pode criar gargalos de desempenho quando há muitas operações de leitura/gravação simultâneas.
+
+3. **Programas Graváveis:** É possível gravar programas na memória do Arduino durante a programação, pois o microcontrolador da série AVR geralmente usado em placas Arduino segue a arquitetura von Neumann.
+
+Arquitetura Harvard:
+
+1. **Memória Separada:** Na arquitetura Harvard, as instruções e os dados são armazenados em memórias separadas. A memória de instruções (geralmente flash) é usada apenas para armazenar programas, enquanto a memória de dados (RAM) é usada para armazenar dados temporários.
+
+2. **Barramentos Separados:** A arquitetura Harvard utiliza barramentos separados para transferir instruções e dados entre as memórias e a CPU. Isso permite que instruções e dados sejam buscados em paralelo, melhorando o desempenho.
+
+3. **Programas Fixos:** Em placas Arduino baseadas na arquitetura Harvard, como o Arduino Uno, os programas são gravados na memória flash durante a programação e não podem ser modificados em tempo de execução. Isso difere da arquitetura von Neumann, onde os programas podem ser gravados e modificados durante a execução.
+
+**O Arduino UNO é um exemplo de placa que usa a arquitetura Harvard**, uma vez que possui memórias de programa (flash) e de dados (RAM) separadas e utiliza barramentos distintos para transferir instruções e dados. 
+
+A divisão entre instruções e dados contribui para a segurança e estabilidade do sistema, uma vez que impede a sobrescrita acidental de instruções de programa, mas limita a flexibilidade para atualização de programas em tempo real. Por outro lado, a arquitetura von Neumann, embora menos comum em microcontroladores modernos, permite maior flexibilidade na modificação dos programas, pois instruções e dados compartilham a mesma memória.
 
 ### Curiosidade
 
