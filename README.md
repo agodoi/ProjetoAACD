@@ -154,6 +154,12 @@ E a árvore de energização da placa segue o seguinte padrão:
    <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoAlimentacao2.png)">
 </picture>
 
+O pinout (significado de cada pino) é demonstrado na imagem a seguir:
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoPinout.png">
+   <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoPinout.png)">
+</picture>
 
 
 ### Curiosidade
