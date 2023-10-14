@@ -112,7 +112,7 @@ Nessa instrução, vamos explorar o hardware que converterá os toques manuais n
    <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3.png)">
 </picture>
 
-### Características
+### Esquemático Eletrônico
 
 Na figura a seguir você pode entender com mais profundidade, do que é feita uma placa Arduino Uno R3. 
 
@@ -138,6 +138,8 @@ O que tem na placa dessa arquitetura embarcada?
 </picture>
 
 
+### Energização 
+
 Sobre a alimentação, o Arduino possui as seguintes limitações:
 
 <picture>
@@ -154,6 +156,9 @@ E a árvore de energização da placa segue o seguinte padrão:
    <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoAlimentacao2.png)">
 </picture>
 
+
+### Interface Arduino IDE
+
 O pinout (significado de cada pino) é demonstrado na imagem a seguir:
 
 <picture>
@@ -167,9 +172,6 @@ O pinout (significado de cada pino) é demonstrado na imagem a seguir:
 Se você perder o adaptador do seu mouse ou teclado USB sem fio, não vai adiatar simplesmente comprar outro adaptador, pois existe um pareamento a ser feito entre receptor e o mouse.
 
 [Vídeo](https://www.youtube.com/watch?v=7uzlEaQ2V70)
-
-
-### Interface Arduino IDE
 
 
 
