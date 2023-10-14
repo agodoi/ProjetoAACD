@@ -170,6 +170,8 @@ O pinout (significado de cada pino) é demonstrado na imagem a seguir:
 
 falta fazer, adicionar figura
 
+https://www.elprocus.com/arduino-basics-and-design/
+
 ### Curiosidade
 
 Se você perder o adaptador do seu mouse ou teclado USB sem fio, não vai adiatar simplesmente comprar outro adaptador, pois existe um pareamento a ser feito entre receptor e o mouse.
