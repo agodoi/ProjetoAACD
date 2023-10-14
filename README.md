@@ -114,6 +114,31 @@ Nessa instrução, vamos explorar o hardware que converterá os toques manuais n
 
 ### Características
 
+Na figura a seguir você pode entender com mais profundidade, do que é feita uma placa Arduino Uno R3. 
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/Arduino-UNO-Description.png">
+   <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/Arduino-UNO-Description.png)">
+</picture>
+
+Perceba que a placa possui dois conectores ICSP (In-Circuit Serial Programming). Ambos servem para programar um chip mesmo já inserido na placa e com todos os componentes eletrônicos em sua volta. [Documentação](https://ww1.microchip.com/downloads/en/DeviceDoc/30277d.pdf). Como há dois chips programáveis no Arduino IDE, um ICSP é do chip USB e o outro ICSP é do Arduino.
+
+O Greg Maker usou o ICSP do chip USB para alterar seu firmware e converter a comunicação USB em comandos padronizados de mouse e teclado. É como se o Arduino se comportasse como um adaptador de mouse e teclaso sem fio. Mas o Arduino não sai assim de fábrica. Precisa reprogramar o conversor USB U3 da imagem a seguir.
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3Esquematico.png">
+   <img alt="Esquemático do Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3Esquematico.png)">
+</picture>
+
+
+
+### Curiosidade
+
+Se você perder o adaptador do seu mouse ou teclado USB sem fio, não vai adiatar simplesmente comprar outro adaptador, pois existe um pareamento a ser feito entre receptor e o mouse.
+
+[Vídeo](https://www.youtube.com/watch?v=7uzlEaQ2V70)
+
+
 ### Interface Arduino IDE
 
 
@@ -124,6 +149,92 @@ Esse vídeo explica como o protocolo USB funciona e como o teclado envia dados p
 
 [Vídeo](https://www.youtube.com/watch?v=wdgULBpRoXk)
 
+Exemplo de código que desliga o PC ao conectar o Arduino Uno na parta USB.
+
+```
+/* Arduino USB HID Keyboard Demo
+ * Random Key/Random Delay
+ */
+uint8_t buf[8] = { 
+  0 };   /* Keyboard report buffer */
+
+void setup() 
+{
+  Serial.begin(9600);
+  randomSeed(analogRead(0));
+  delay(200);
+}
+
+void loop() 
+{
+  //int randomChar = random(4, 130);
+  //long randomDelay = random(1000, 10000);
+
+   delay(5000);
+   buf[0] = (1<<3);
+   buf[2] = 21;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   delay(1000);
+   buf[2] = 22;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 11;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 24;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 23;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 7;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 18;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 26;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 17;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 44;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 84;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 22;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 44;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 84;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   buf[2] = 9;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   //Keyboard.print(" /f");
+   buf[2] = 40;
+   Serial.write(buf, 8); // Send keypress
+   releaseKey();
+   delay(1000);
+}
+
+void releaseKey() 
+{
+   buf[0] = 0;
+   buf[2] = 0;
+   Serial.write(buf, 8); // Release key  
+}
+```
+
+
+
 ## Mouse USB
 
 Esse vídeo explica como o mouse varre a superfície e tranforma em movimentos.
@@ -132,6 +243,7 @@ Esse vídeo explica como o mouse varre a superfície e tranforma em movimentos.
 
 
 ## Atuadores
+
 
 
 ## Energia em sistemas embarcados
