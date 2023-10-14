@@ -123,13 +123,19 @@ Na figura a seguir você pode entender com mais profundidade, do que é feita um
 
 Perceba que a placa possui dois conectores ICSP (In-Circuit Serial Programming). Ambos servem para programar um chip mesmo já inserido na placa e com todos os componentes eletrônicos em sua volta. [Documentação](https://ww1.microchip.com/downloads/en/DeviceDoc/30277d.pdf). Como há dois chips programáveis no Arduino IDE, um ICSP é do chip USB e o outro ICSP é do Arduino.
 
-O Greg Maker usou o ICSP do chip USB, **chip U3** da figura a seguir para alterar seu firmware e converter a comunicação USB em comandos padronizados de mouse e teclado. É como se o Arduino se comportasse como um adaptador de mouse e teclaso sem fio. Mas o Arduino não sai assim de fábrica. Precisa reprogramar o conversor USB U3 da imagem a seguir.
+O Greg Maker usou o ICSP do chip USB, **chip U3** da figura a seguir para alterar seu firmware e converter a comunicação USB em comandos padronizados de mouse e teclado. É como se o Arduino se comportasse como um adaptador de mouse e teclaso sem fio. Mas o Arduino não sai assim de fábrica. Precisa reprogramar o conversor USB U3 da imagem a seguir. Esse chip conversor USB tem que ser o "quadradinho" e não um retângulo. O retângulo não aceita reprogramação de firmware.
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3Esquematico.png">
    <img alt="Esquemático do Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3Esquematico.png)">
 </picture>
 
+Sobre a alimentação, o Arduino possui as seguintes limitações:
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoAlimentacao.png">
+   <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoAlimentacao.png)">
+</picture>
 
 
 ### Curiosidade
