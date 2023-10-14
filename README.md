@@ -130,6 +130,14 @@ O Greg Maker usou o ICSP do chip USB, **chip U3** da figura a seguir para altera
    <img alt="Esquemático do Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3Esquematico.png)">
 </picture>
 
+O que tem na placa dessa arquitetura embarcada?
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoChips.png">
+   <img alt="Esquemático do Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoChips.png)">
+</picture>
+
+
 Sobre a alimentação, o Arduino possui as seguintes limitações:
 
 <picture>
