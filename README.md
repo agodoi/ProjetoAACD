@@ -88,6 +88,14 @@ Exemplo: a figura abaixo apresenta alimentos e objetos condutores e semicondutor
    <img alt="Família ESP32" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/gregMaker.png)">
 </picture>
 
+## Diagrama de Blocos da Solução
+
+A figura a seguir demonstra o diagrama de blocos da solução mínima para a fundação AACD. Observe com calma!
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArquiteturaAACD.jpg">
+   <img alt="Família ESP32" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArquiteturaAACD.jpg)">
+</picture>
 
 ## Arduino Uno - Documentação
 
