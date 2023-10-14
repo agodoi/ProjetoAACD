@@ -57,6 +57,14 @@ O ESP32 é um microcontrolador que pode ser programado usando a mesma plataforma
 5. **Programação em C/C++**: Embora o ambiente Arduino simplifique a programação do ESP32, você ainda está programando em linguagem C/C++. Isso significa que é possível acessar diretamente o hardware do ESP32 e desenvolver código de baixo nível quando necessário. Outro ponto importante é que o ESP32 possui maior memória interna que o Arduino Uno R3, e por isso, o ESP32 pode ser convertido para microPython, que é uma variação do Python adaptada ao microcontrolador.
 
 
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ESP32Familia.png">
+   <img alt="Família ESP32" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ESP32Familia.png)">
+</picture>
+
+
+
+
 ### O modelo que vamos adotar nesse projeto é o Arduino Uno
 
 
