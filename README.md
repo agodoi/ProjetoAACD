@@ -66,6 +66,24 @@ O ESP32 é um microcontrolador que pode ser programado usando a mesma plataforma
 ### O modelo que vamos adotar nesse projeto é o Arduino Uno
 
 
+## Qual a função do Arduino Uno R3 no projeto?
+
+O projeto AACD é o **desenvolvimento de um compilador para PC "de alto nível"** que será transformado para linguagem Python. Esse Python chamaremos de "baixo nível" que rodará no ambiente Windows.
+
+Esse compilador de alto nível, desenvolvido pelos alunos, deverá **resolver uma gameficação do TO** (Terapeuta Ocupacional) da AACD.
+
+A gameficação contará com a entrada de dados provenientes do [Greg Maker](https://www.gregmaker.com.br/), **que transforma os toques manuais** sobre objetos semicondutores e condutores em **movimentos do mouse e algumas teclas do teclado**, como barra de espaço, ENTER e setas.
+
+**O responsável pela detecção dos toques manuais é o Arduino Uno R3**.
+
+Exemplo: a figura abaixo apresenta alimentos semicondutores e objetos condutores (marmita de alumínio) conectados ao Greg Maker, que ao serem tocados, moverá o mouse na tela do computador, ou pressionará a barra de espaço ou o ENTER ou as setas. Vai depender de quais fios foram conectados em cada objeto.
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/gregMaker.png">
+   <img alt="Família ESP32" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/gregMaker.png)">
+</picture>
+
+
 ## Arduino Uno - Documentação
 
 [Fonte](https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf)
@@ -74,4 +92,6 @@ O ESP32 é um microcontrolador que pode ser programado usando a mesma plataforma
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3.png">
    <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3.png)">
 </picture>
+
+
 
