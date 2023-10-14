@@ -168,11 +168,11 @@ O pinout (significado de cada pino) é demonstrado na imagem a seguir:
 
 ### Arquitetura Harvard
 
-Nesse projeto, é importante entender a diferença as possíveis arquiteturas dos microcontroladores.
+Nesse projeto, é importante entender as possíveis diferentes arquiteturas dos microcontroladores. Como introdução, observe quais duas arquiteturas são possíveis ao se construir um microncontrolador ou microprocessador.
 
 <picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoArquitetura.jpg">
-   <img alt="Tipos de Arquitetura" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoArquitetura.jpg)">
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArquiteturaVonNeumann_Harvard.png">
+   <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArquiteturaVonNeumann_Harvard.png)">
 </picture>
 
 A arquitetura von Neumann e a arquitetura Harvard são dois paradigmas de design de computadores que diferem na maneira como tratam o armazenamento e a execução de instruções e dados. Essas arquiteturas têm implicações na operação e no desempenho dos sistemas, e podem ser contextualizadas na arquitetura do Arduino da seguinte maneira:
@@ -196,6 +196,16 @@ Arquitetura Harvard:
 **O Arduino UNO é um exemplo de placa que usa a arquitetura Harvard**, uma vez que possui memórias de programa (flash) e de dados (RAM) separadas e utiliza barramentos distintos para transferir instruções e dados. 
 
 A divisão entre instruções e dados contribui para a segurança e estabilidade do sistema, uma vez que impede a sobrescrita acidental de instruções de programa, mas limita a flexibilidade para atualização de programas em tempo real. Por outro lado, a arquitetura von Neumann, embora menos comum em microcontroladores modernos, permite maior flexibilidade na modificação dos programas, pois instruções e dados compartilham a mesma memória.
+
+### Arquitetura Interna do Arduino Uno
+
+A figura a seguir apresenta a arquitetura interna do Arduino Uno, e em destaque, tem-se as duas memórias (RAM e Programa) separadas.
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoArquitetura.jpg">
+   <img alt="Tipos de Arquitetura" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoArquitetura.jpg)">
+</picture>
+
 
 ### Curiosidade
 
