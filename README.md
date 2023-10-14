@@ -157,7 +157,7 @@ E a árvore de energização da placa segue o seguinte padrão:
 </picture>
 
 
-### Interface Arduino IDE
+### Pinout Arduino Uno R3
 
 O pinout (significado de cada pino) é demonstrado na imagem a seguir:
 
@@ -274,15 +274,31 @@ Esse vídeo explica como o mouse varre a superfície e tranforma em movimentos.
 [Vídeo](https://www.youtube.com/watch?v=SAaESb4wTCM)
 
 
+
 ## Atuadores
 
+Atuadores são componentes ou dispositivos que convertem um sinal de controle em uma ação física, ou seja, eles são responsáveis por efetuar uma mudança no ambiente físico. No ecossistema do Arduino, os atuadores são frequentemente usados para controlar luzes, movimento, som, temperatura, entre outros. Eles desempenham um papel crucial em projetos onde você deseja criar interações ou controle com o mundo real. Abaixo estão alguns exemplos de atuadores comuns no ecossistema do Arduino:
 
+1. **Servo Motor**: Um servo motor é um atuador que gira em um ângulo específico com base no sinal de controle. Eles são amplamente utilizados para controlar movimentos precisos, como abrir uma porta, mover um braço robótico ou ajustar um sistema de câmera. Por exemplo, um servo motor pode ser usado em um projeto de braço robótico controlado por um Arduino.
 
-## Energia em sistemas embarcados
+2. **Motor de Passo**: Os motores de passo são usados para controlar o movimento em incrementos discretos. Eles são ideais para aplicações que exigem controle preciso, como impressoras 3D, CNC (Controle Numérico Computadorizado) ou telescópios automatizados.
 
+3. **Motores DC**: Os motores de corrente contínua (DC) são atuadores que giram em uma direção quando energizados. Eles são comumente usados para mover rodas de robôs, ajustar a posição de uma cortina, ou criar dispositivos que envolvem movimento linear.
+
+4. **LEDs (Diodos Emissores de Luz)**: Embora os LEDs sejam frequentemente usados para indicar status e iluminação, eles também podem ser considerados atuadores, pois alteram o estado da luz. Por exemplo, você pode usar um LED para criar um sistema de sinalização visual em seu projeto.
+
+5. **Relés**: Os relés são interruptores controlados eletronicamente. Eles são usados para controlar dispositivos de alta potência, como lâmpadas, motores de CA (corrente alternada) ou aquecedores. Um exemplo seria o uso de um relé para ligar/desligar uma lâmpada de forma remota usando um Arduino.
+
+6. **Buzzer ou Alto-falante**: Esses dispositivos emitem som quando energizados. Eles são usados para criar sons, alarmes ou sinais sonoros em projetos. Por exemplo, você pode usar um buzzer para criar um alarme sonoro em um sistema de segurança doméstica.
+
+7. **Válvulas Solenoides**: As válvulas solenoides são atuadores que controlam o fluxo de líquidos ou gases. Elas são comuns em sistemas de irrigação, controle de fluidos e automação industrial. Um Arduino pode ser usado para controlar uma válvula solenoide em um sistema de irrigação automatizado para jardins.
+
+**Nesse projeto, é provável que as soluções se direcionam para o item (6). Além disso, vamos usar uma tela como interface. A tela não é exatamente um atuador, pois não resulta numa ação física. Mas é tão importante quanto, pois é onde se complementa a experiência do usuário**.
 
 
 ## Simulação de sistemas embarcados
 
+### Parte prática
 
+Usando o [TinkerCad](https://www.tinkercad.com/dashboard), puxe um Arduno Uno R3 para a área de desenvolvimento da tela, e faça um pisca-pisca.
 
