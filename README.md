@@ -171,8 +171,8 @@ O pinout (significado de cada pino) é demonstrado na imagem a seguir:
 Nesse projeto, é importante entender a diferença as possíveis arquiteturas dos microcontroladores.
 
 <picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://www.elprocus.com/arduino-basics-and-design/">
-   <img alt="Tipos de Arquitetura" src="[YOUR-DEFAULT-IMAGE](https://www.elprocus.com/arduino-basics-and-design/)">
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoArquitetura.jpg">
+   <img alt="Tipos de Arquitetura" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoArquitetura.jpg)">
 </picture>
 
 A arquitetura von Neumann e a arquitetura Harvard são dois paradigmas de design de computadores que diferem na maneira como tratam o armazenamento e a execução de instruções e dados. Essas arquiteturas têm implicações na operação e no desempenho dos sistemas, e podem ser contextualizadas na arquitetura do Arduino da seguinte maneira:
