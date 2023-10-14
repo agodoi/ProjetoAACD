@@ -177,7 +177,7 @@ Nesse projeto, é importante entender as possíveis diferentes arquiteturas dos 
 
 A arquitetura von Neumann e a arquitetura Harvard são dois paradigmas de design de computadores que diferem na maneira como tratam o armazenamento e a execução de instruções e dados. Essas arquiteturas têm implicações na operação e no desempenho dos sistemas, e podem ser contextualizadas na arquitetura do Arduino da seguinte maneira:
 
-Arquitetura Von Neumann:
+#### Arquitetura Von Neumann:
 
 1. **Armazenamento de Instruções e Dados:** Na arquitetura von Neumann, tanto as instruções quanto os dados são armazenados na mesma memória, a RAM. Isso significa que o programa e os dados compartilham a mesma memória física.
 
@@ -185,7 +185,7 @@ Arquitetura Von Neumann:
 
 3. **Programas Graváveis:** É possível gravar programas na memória do Arduino durante a programação, pois o microcontrolador da série AVR geralmente usado em placas Arduino segue a arquitetura von Neumann.
 
-Arquitetura Harvard:
+#### Arquitetura Harvard:
 
 1. **Memória Separada:** Na arquitetura Harvard, as instruções e os dados são armazenados em memórias separadas. A memória de instruções (geralmente flash) é usada apenas para armazenar programas, enquanto a memória de dados (RAM) é usada para armazenar dados temporários.
 
