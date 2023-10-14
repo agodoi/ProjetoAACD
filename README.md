@@ -208,6 +208,33 @@ Na memória Flash fica o código-fonte criado pelo desenvolvedor, enquanto que n
    <img alt="Tipos de Arquitetura" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoArquitetura.jpg)">
 </picture>
 
+A memória SRAM (Static Random-Access Memory) no Arduino Uno R3 é uma parte importante da memória do microcontrolador ATmega328P usado nesta placa. Ela desempenha várias funções cruciais:
+
+1. **Armazenamento de Dados Temporários:** A memória SRAM é usada para armazenar dados temporários durante a execução de programas. Isso inclui variáveis, buffers e outras estruturas de dados que o programa Arduino utiliza. A SRAM é a memória mais rápida disponível no microcontrolador, tornando-a ideal para armazenar dados que precisam ser acessados e modificados rapidamente.
+
+2. **Pilha (Stack):** A memória SRAM também é usada para a pilha de chamadas (stack), que é fundamental para a execução de funções e a gestão do fluxo de execução do programa. Quando uma função é chamada, as informações necessárias para retornar à função chamadora são armazenadas na pilha.
+
+3. **Armazenamento de Variáveis Globais:** Variáveis globais declaradas no programa Arduino são armazenadas na SRAM. Essas variáveis podem ser acessadas e modificadas em várias partes do programa.
+
+4. **Buffer Serial:** A memória SRAM é frequentemente usada para criar buffers para comunicação serial, como UART. Isso permite a armazenagem temporária de dados que estão sendo enviados ou recebidos pela porta serial.
+
+5. **Armazenamento de Dados do Usuário:** Seu programa Arduino pode usar a SRAM para armazenar dados que precisam ser retidos enquanto o dispositivo está em execução. Isso pode incluir valores de sensores, configurações personalizadas, contagens e outras informações relevantes ao seu projeto.
+
+É importante notar que a memória SRAM no Arduino Uno R3 é relativamente limitada, com apenas 2 KB disponíveis. Portanto, ao escrever programas, é fundamental gerenciar eficientemente o uso da SRAM, evitando o esgotamento dela, o que pode causar comportamento inesperado ou falhas no programa. O uso excessivo de SRAM é uma das principais razões para erros de alocação de memória no Arduino. Portanto, é importante otimizar o código e alocar a SRAM com sabedoria para garantir um funcionamento estável e confiável de seu projeto.
+
+A memória flash no Arduino Uno R3 desempenha um papel fundamental no armazenamento de programas (código-fonte) que são carregados no microcontrolador ATmega328P, que é o coração do Arduino Uno. Aqui está o que a memória flash faz:
+
+1. **Armazenamento de Programas:** A memória flash é usada para armazenar o programa ou código-fonte que você escreve no Arduino Uno. Isso inclui todas as instruções e funções que compõem seu sketch do Arduino. Quando você faz o upload de um novo programa para o Arduino, ele é gravado na memória flash.
+
+2. **Programas Fixos:** A memória flash é considerada "não volátil", o que significa que os programas carregados nela são retidos mesmo quando o Arduino é desligado. Isso permite que o Arduino execute o programa sempre que for ligado ou resetado, tornando-o adequado para aplicações autônomas.
+
+3. **Espaço Limitado:** A capacidade de armazenamento da memória flash em um Arduino Uno R3 é de 32 KB (kilobytes). Isso inclui tanto o programa em si quanto algumas informações do bootloader, que é o software que permite o carregamento de novos programas no Arduino.
+
+4. **Leitura de Programas:** Durante a execução, a CPU do microcontrolador lê as instruções do programa na memória flash e as executa sequencialmente.
+
+É importante ter em mente que a capacidade de armazenamento da memória flash é limitada. Portanto, ao programar para o Arduino Uno, é essencial otimizar seu código para economizar espaço na memória flash. Isso pode incluir práticas como evitar o uso excessivo de bibliotecas, remover código não utilizado e usar variáveis eficientemente.
+
+Além disso, a memória flash também é onde o bootloader do Arduino Uno reside. O bootloader é um pequeno programa que permite que você faça o upload de novos sketches para o Arduino através da porta USB. Ele é executado sempre que você carrega um novo programa, e depois permite que esse programa seja gravado na memória flash. Portanto, a memória flash serve como o local de armazenamento e execução de programas, tornando o Arduino Uno um dispositivo programável e reprogramável.
 
 ### Curiosidade
 
