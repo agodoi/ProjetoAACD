@@ -166,6 +166,9 @@ O pinout (significado de cada pino) é demonstrado na imagem a seguir:
    <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoPinout.png)">
 </picture>
 
+### Arquitetura Harvard
+
+falta fazer, adicionar figura
 
 ### Curiosidade
 
@@ -265,14 +268,11 @@ void releaseKey()
 }
 ```
 
-
-
 ## Mouse USB
 
 Esse vídeo explica como o mouse varre a superfície e tranforma em movimentos.
 
 [Vídeo](https://www.youtube.com/watch?v=SAaESb4wTCM)
-
 
 
 ## Atuadores
