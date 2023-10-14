@@ -199,7 +199,9 @@ A divisão entre instruções e dados contribui para a segurança e estabilidade
 
 ### Arquitetura Interna do Arduino Uno
 
-A figura a seguir apresenta a arquitetura interna do Arduino Uno, e em destaque, tem-se as duas memórias (RAM e Programa) separadas.
+A figura a seguir apresenta a arquitetura interna do Arduino Uno, e em destaque, tem-se as duas memórias (Flash e RAM) separadas.
+
+Na memória Flash fica o código-fonte criado pelo desenvolvedor, enquanto que na memória SRAM, ficam os dados e variáveis que o programa instancia.
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoArquitetura.jpg">
