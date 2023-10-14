@@ -166,7 +166,7 @@ O pinout (significado de cada pino) é demonstrado na imagem a seguir:
    <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArduinoPinout.png)">
 </picture>
 
-### Arquitetura Harvard
+### Tipos de Arquiteturas para Microcontroladores
 
 Nesse projeto, é importante entender as possíveis diferentes arquiteturas dos microcontroladores. Como introdução, observe quais duas arquiteturas são possíveis ao se construir um microncontrolador ou microprocessador.
 
