@@ -368,5 +368,5 @@ Atuadores são componentes ou dispositivos que convertem um sinal de controle em
 
 1) Usando o [TinkerCad](https://www.tinkercad.com/dashboard), puxe um Arduno Uno R3 para a área de desenvolvimento da tela, e faça um pisca-pisca no LEDBUILT_IN. Esse programa é o básico da plataforma TinkerCad.
 
-2) Agora, no mesmo Arduino, vamos emular um sensor de tato usando o comando ```analogRead()```
+2) Agora, no mesmo Arduino, vamos emular um sensor de tato usando o comando ```analogRead()```para simular um contato do paciente no tapete sensorial. Siga as instruções do professor.
 
