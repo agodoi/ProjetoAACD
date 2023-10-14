@@ -63,8 +63,15 @@ O ESP32 é um microcontrolador que pode ser programado usando a mesma plataforma
 </picture>
 
 
-
-
 ### O modelo que vamos adotar nesse projeto é o Arduino Uno
 
+
+## Arduino Uno - Documentação
+
+[Fonte](https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf)
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3.png">
+   <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3.png)">
+</picture>
 
