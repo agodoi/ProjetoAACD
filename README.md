@@ -75,9 +75,9 @@ O ESP32 é um microcontrolador que pode ser programado usando a mesma plataforma
 
 O projeto AACD é o **desenvolvimento de um compilador para PC "de alto nível"** que será transformado para linguagem Python. Esse Python chamaremos de "baixo nível" que rodará no ambiente Windows.
 
-Esse compilador de alto nível, desenvolvido pelos alunos, deverá **resolver uma gameficação do TO** (Terapeuta Ocupacional) da AACD.
+Esse compilador de alto nível, desenvolvido pelos alunos, deverá **resolver uma gamificação do TO** (Terapeuta Ocupacional) da AACD.
 
-A gameficação contará com a entrada de dados provenientes do [Greg Maker](https://www.gregmaker.com.br/), **que transforma os toques manuais** sobre objetos semicondutores e condutores em **movimentos do mouse e algumas teclas do teclado**, como barra de espaço, ENTER e setas.
+A gamificação contará com a entrada de dados provenientes do [Greg Maker](https://www.gregmaker.com.br/), **que transforma os toques manuais** sobre objetos semicondutores e condutores em **movimentos do mouse e algumas teclas do teclado**, como barra de espaço, ENTER e setas.
 
 **O responsável pela detecção dos toques manuais é o Arduino Uno R3**.
 
@@ -92,6 +92,10 @@ Exemplo: a figura abaixo apresenta alimentos e objetos condutores e semicondutor
 
 A figura a seguir demonstra o diagrama de blocos da solução mínima para a fundação AACD. Observe com calma!
 
+**A missão desse projeto está na gamificação para o ambiente Windows e não no Arduino Uno R3**.
+
+O Arduino é somente um sistema embarcado que captura dados de toques e os converte em movimentos do mouse e algumas teclas do teclado.
+
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArquiteturaAACD.jpg">
    <img alt="Família ESP32" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/ArquiteturaAACD.jpg)">
@@ -99,12 +103,42 @@ A figura a seguir demonstra o diagrama de blocos da solução mínima para a fun
 
 ## Arduino Uno - Documentação
 
+Nessa instrução, vamos explorar o hardware que converterá os toques manuais nos **trem da mesa :)** em movimentos do mouse e teclado.
+
 [Fonte](https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf)
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3.png">
    <img alt="Arduino Uno R3" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduinoUnoR3.png)">
 </picture>
+
+### Características
+
+### Interface Arduino IDE
+
+
+
+## Teclado USB
+
+Esse vídeo explica como o protocolo USB funciona e como o teclado envia dados para o PC.
+
+[Vídeo](https://www.youtube.com/watch?v=wdgULBpRoXk)
+
+## Mouse USB
+
+Esse vídeo explica como o mouse varre a superfície e tranforma em movimentos.
+
+[Vídeo](https://www.youtube.com/watch?v=SAaESb4wTCM)
+
+
+## Atuadores
+
+
+## Energia em sistemas embarcados
+
+
+
+## Simulação de sistemas embarcados
 
 
 
