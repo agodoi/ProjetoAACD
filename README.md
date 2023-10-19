@@ -371,9 +371,49 @@ Tenta colocar um sensor compatível com alguma interface de comunicação do Ras
 
 ## Simulação de sistemas embarcados
 
-### Parte prática
+### Parte prática - Passos
 
-1) Usando o [TinkerCad](https://www.tinkercad.com/dashboard), puxe um Arduno Uno R3 para a área de desenvolvimento da tela, e faça um pisca-pisca no LEDBUILT_IN. Esse programa é o básico da plataforma TinkerCad.
+1) Usando o [TinkerCad](https://www.tinkercad.com/dashboard), puxe um Arduno Uno R3 para a área de desenvolvimento da tela;
+  
+3) Clique no botão **código** e altere para **Texto** e confirma numa tela **Continuar**.
+   
+5) Clique no botão **Iniciar simulação** para rodar o pisca-pisca no LEDBUILT_IN da placa. Esse programa é o básico da plataforma TinkerCad.
 
-2) Agora, no mesmo Arduino, vamos emular um sensor de tato usando o comando ```analogRead()```para simular um contato do paciente no tapete sensorial. Siga as instruções do professor.
+6) Interrompa a simulação clicando em **Parar simulação** e altere o tempo do delay para o tempo que você quiser e execute o programa novamente.
+
+7) Agora, no mesmo Arduino, vamos emular um sensor de tato usando o comando ```analogRead()```para simular um contato do paciente no tapete sensorial.
+
+7.1) Monte o circuito conforme a imagem a seguir:
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduino_sensor_umidade.png">
+   <img alt="Tipos de Arquitetura" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduino_sensor_umidade.png)">
+</picture>
+
+7.2) Use esse código como exemplo
+
+```
+void setup()
+{
+  pinMode(A0,INPUT);
+  Serial.begin(9200);
+}
+
+void loop()
+{
+  int dadoTapete = analogRead(A0);
+  Serial.println(dadoTapete);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+```
+
+7.3) Clique no sensor de umidade e simule o nível de umidade e observe o **monitor serial** para entender os dados chegando.
+
+8) Conclusões:
+
+   a) O tapete do Greg está fazendo exatamente isso que você está simulando agora.
+   
+   b) Porém, o Greg Maker transforma esses valores inteiros em movimentos do mouse ou teclas do teclado.
+   
+   c) Sua função no projeto é pegar os movimentos do mouse e/ou teclado e gamificar uma aplicação **no code** usando um compilador.
 
