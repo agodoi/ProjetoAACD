@@ -254,7 +254,7 @@ Esse vídeo explica como o protocolo USB funciona e como o teclado envia dados p
 
 Exemplo de código que desliga o PC ao conectar o Arduino Uno na parta USB.
 
-Para enviar os caracteres a ```Tecla do Windows + R + shutdown + espaço + /f + (enter)```
+Para enviar os caracteres: ```Tecla Windows + R + shutdown + espaço + /f + (enter)```
 
 Precisa-se desse código abaixo:
 
