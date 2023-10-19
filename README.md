@@ -70,6 +70,8 @@ O ESP32 é um microcontrolador que pode ser programado usando a mesma plataforma
 
 ### O modelo que vamos adotar nesse projeto é o Arduino Uno
 
+### Modelo do chip: [atmega32u4](https://www.microchip.com/en-us/product/atmega32u4)
+
 
 ## Qual a função do Arduino Uno R3 no projeto?
 
