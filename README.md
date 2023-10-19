@@ -411,9 +411,9 @@ void loop()
 
 12) Conclusões
 
-   a) O tapete do Greg está fazendo exatamente isso que você está simulando agora.
+   a) O tapete sensorial + Greg Maker está fazendo exatamente isso que você está simulando agora. O Greg Maker parece usar o analogRead pelo fato de detectar tatos.
    
    b) Porém, o Greg Maker transforma esses valores inteiros em movimentos do mouse ou teclas do teclado.
    
-   c) Sua função no projeto é pegar os movimentos do mouse e/ou teclado e gamificar uma aplicação **no code** usando um compilador.
+   c) Sua função no projeto é pegar os movimentos do mouse e/ou teclado e gamificar uma aplicação do tipo **no code** e desenvolver o compilador dessa aplicação.
 
