@@ -254,6 +254,27 @@ Esse vídeo explica como o protocolo USB funciona e como o teclado envia dados p
 
 Exemplo de código que desliga o PC ao conectar o Arduino Uno na parta USB.
 
+Para enviar os caracteres a seguir:
+
+```
+Tecla do Windows + R
+Tecla s
+Tecla h
+Tecla u
+Tecla t
+Tecla d
+Tecla o
+Tecla w
+Tecla n
+Tecla (espaço)
+Tecla /
+Tecla f
+Tecla (enter)
+```
+
+Precisa-se desse código abaixo:
+
+
 ```
 /* Arduino USB HID Keyboard Demo
  * Random Key/Random Delay
