@@ -382,15 +382,15 @@ Tenta colocar um sensor compatível com alguma interface de comunicação do Ras
 6) Interrompa a simulação clicando em **Parar simulação** e altere o tempo do delay para o tempo que você quiser e execute o programa novamente.
 
 7) Agora, no mesmo Arduino, vamos emular um sensor de tato usando o comando ```analogRead()```para simular um contato do paciente no tapete sensorial.
-
-7.1) Monte o circuito conforme a imagem a seguir:
+  
+9) Monte o circuito conforme a imagem a seguir:
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduino_sensor_umidade.png">
    <img alt="Tipos de Arquitetura" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/ProjetoAACD/blob/main/imgs/arduino_sensor_umidade.png)">
 </picture>
 
-7.2) Use esse código como exemplo
+10) Use esse código como exemplo
 
 ```
 void setup()
@@ -407,9 +407,9 @@ void loop()
 }
 ```
 
-7.3) Clique no sensor de umidade e simule o nível de umidade e observe o **monitor serial** para entender os dados chegando.
+11) Clique no sensor de umidade e simule o nível de umidade e observe o **monitor serial** para entender os dados chegando.
 
-8) Conclusões:
+12) Conclusões
 
    a) O tapete do Greg está fazendo exatamente isso que você está simulando agora.
    
