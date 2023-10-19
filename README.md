@@ -364,6 +364,11 @@ Atuadores são componentes ou dispositivos que convertem um sinal de controle em
 **Nesse projeto, é provável que as soluções se direcionam para o item (6). Além disso, vamos usar uma tela como interface. A tela não é exatamente um atuador, pois não resulta numa ação física. Mas é tão importante quanto, pois é onde se complementa a experiência do usuário**.
 
 
+## Dicas para ponderada dessa semana
+
+O que precisa ser feito **não envolve** o Raspberry Pi Pico do laboratório. É um trabalho documental + simulado no WokWi.
+Tenta colocar um sensor compatível com alguma interface de comunicação do Raspberry Pi Pico no WokWi e imprima os dados desse sensor no terminal.
+
 ## Simulação de sistemas embarcados
 
 ### Parte prática
